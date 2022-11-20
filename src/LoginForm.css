@@ -1,0 +1,66 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 450px;
+    width: 375px;
+    border-radius: 20px;
+    margin: 50px;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 27px;
+}
+
+.inputs {
+    text-align: left;
+    font-display: flex;
+    flex-direction: column;
+}
+
+.inputs input, textarea {
+    height: 35px;
+    width: 100%;
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.inputs .funfact {
+    height: 70px;
+    padding-top: 6px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    resize: none;
+}
+
+.inputs .input-title {
+    padding-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.button-container {
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.submit {
+    height: 50%;
+    width: 35%;
+    background-color: #ff7b5c;
+    color: white;
+    border: none;
+    border-radius: 100px;
+}
+
+@media (max-width: 800px) {
+    .login-form {
+        max-width: 350px;
+        width: 70vw;
+    }
+}
