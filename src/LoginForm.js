@@ -5,13 +5,23 @@ function ValidateEmail(value) {
     return false
 }
 
-function submit() {
-    let name = document.querySelector(".name").value
-    let email = document.querySelector(".email").value
-    let funfact = document.querySelector(".funfact").value
+async function submit() {
+    let name = document.querySelector(".name")
+    let email = document.querySelector(".email")
+    let funfact = document.querySelector(".funfact")
 
-    if (ValidateEmail(email)) { console.log([name, email, funfact]) }
-    else { console.log('bruh') }
+    if (!ValidateEmail(email.value)) { alert("Invalid email!") } 
+    else if (!name.value) { alert("No name was entered!") }
+    else if (!funfact.value) { alert("No fun fact was entered!") }
+    else {  
+        let response = await fetch(`https://hack-tech-app-endpoint.herokuapp.com/test?name=${name.value}&email=${email.value}&funfact=${funfact.value}`)
+        response = await response.json()
+        console.log(response)
+        alert("Your info was submitted!")
+        name.value = ""
+        email.value = ""
+        funfact.value = ""
+    }
 }
 
 function LoginForm() {
