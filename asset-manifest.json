@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/hack-application/static/css/main.f596500b.css",
-    "main.js": "/hack-application/static/js/main.bb024b1b.js",
+    "main.js": "/hack-application/static/js/main.276b3326.js",
+    "static/media/petr.png": "/hack-application/static/media/petr.09fc90a9e8f18b61b844.png",
     "index.html": "/hack-application/index.html",
     "main.f596500b.css.map": "/hack-application/static/css/main.f596500b.css.map",
-    "main.bb024b1b.js.map": "/hack-application/static/js/main.bb024b1b.js.map"
+    "main.276b3326.js.map": "/hack-application/static/js/main.276b3326.js.map"
   },
   "entrypoints": [
     "static/css/main.f596500b.css",
-    "static/js/main.bb024b1b.js"
+    "static/js/main.276b3326.js"
   ]
 }
